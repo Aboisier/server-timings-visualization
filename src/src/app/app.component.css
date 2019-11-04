@@ -1,0 +1,14 @@
+div {
+    text-align: center;
+    font-family: 'arial', sans-serif;
+}
+
+a {
+    font-size: 1.15em;
+    color: rgb(51, 155, 216);
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(45, 104, 182);
+}

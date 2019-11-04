@@ -1,0 +1,58 @@
+:host { position: relative; }
+.slot {
+    animation: fadein 2s;
+    font-size: 0.8em;
+    padding: 8px 12px;
+    margin: 0;
+}
+
+.ms {
+    color: #999;
+}
+
+.details {
+    font-size: 0.8em;
+    position: absolute;
+    right: 7.5em;
+    bottom: 0.5em;
+    background: #555;
+    color: white;
+    border-radius: 4px;
+    box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.15);
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+.details p {
+    margin: 0;
+    padding: 8px 10px;
+}
+
+.details .request {
+    background-color: #444;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.details:after {
+	left: 100%;
+	bottom: 0.5em;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: transparent;
+	border-left-color: #555;
+	border-width: 4px;
+	margin-top: -4px;
+}
+
+.show-details {
+}
+
+.hide-details {
+    display: none;
+}

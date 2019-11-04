@@ -1,0 +1,4 @@
+<div class="container">
+    <div class="clear" (click)="clear()"><a>clear</a></div>
+    <lib-server-timing-metric *ngFor="let timing of timings" [timing]="timing"></lib-server-timing-metric>
+</div>

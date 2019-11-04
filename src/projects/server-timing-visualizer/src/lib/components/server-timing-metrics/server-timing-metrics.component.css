@@ -1,0 +1,40 @@
+:host {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-family: 'consolas', monospace, sans-serif;
+}
+
+.container {
+    position: relative;
+    box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.15);
+    border-top-left-radius: 6px;
+}
+
+lib-server-timing-metric {
+    position: relative;
+    animation: fadein 2s;
+    display: block;
+    border-top-left-radius: 6px;
+}
+
+@keyframes fadein {
+    from { background-color: rgb(255, 255, 0); }
+    to   { background-color: rgba(255, 255, 255, 0); }
+}
+
+.clear {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 4px 8px;
+}
+
+a {
+    font-size: 1.15em;
+    color: rgb(51, 155, 216);
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(45, 104, 182);
+}

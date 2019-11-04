@@ -1,0 +1,12 @@
+<div class="details" [class.show-details]="shouldShowDetails" [class.hide-details]="!shouldShowDetails">
+    <p class="request">
+        {{ timing.request }}
+    </p>
+    <p *ngFor="let metric of timing.metrics" >
+        {{ metric.name }}: {{ metric.timing != null ? (metric.timing | number:'1.2') : '?' }} <span>ms</span>
+    </p>
+</div>
+
+<p class="slot">
+    {{ timing.duration | number:'1.2' }} <span class="ms">ms</span>
+</p>
